@@ -31,7 +31,10 @@ var unleashDog = function(dogName="Byron", dogBreed="poodle") {
 let routine = [wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog]; 
 
 function exerciseDog(dogName, dogBreed) {
-  for (i = 0; i < routine.length; i++)
+  for (i = 0; i < routine.length; i++) {
+    routine[i](dogName, dogBreed);
+    i++;
+  }
 }
 
 function exerciseDog(dog, breed) {
