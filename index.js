@@ -9,3 +9,7 @@ function leashDog(dogName, dogBreed) {
 function walkToPark(dogName, dogBreed) {
   console.log(`Walk ${dogName} the ${dogBreed} to the park.`);
 }
+
+function walkToPark(dogName, dogBreed) {
+  console.log(`Walk ${dogName} the ${dogBreed} to the park.`);
+}
