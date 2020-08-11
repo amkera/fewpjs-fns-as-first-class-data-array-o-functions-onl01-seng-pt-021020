@@ -28,4 +28,8 @@ var unleashDog = function(dogName="Byron", dogBreed="poodle") {
   return `Unleash ${dogName} the ${dogBreed}`
 }
 
-let routine = []
+let routine = [wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog]; 
+
+function exerciseDog(dogName, dogBreed) {
+  for (i = 0; i < routine.length; )
+}
