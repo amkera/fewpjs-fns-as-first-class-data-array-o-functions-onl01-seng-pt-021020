@@ -30,13 +30,20 @@ var unleashDog = function(dogName="Byron", dogBreed="poodle") {
 
 let routine = [wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog]; 
 
+//long way:
+
+let resultArray = []; 
+
 function exerciseDog(dogName, dogBreed) {
+  let i = 0
   for (i = 0; i < routine.length; i++) {
-    routine[i](dogName, dogBreed);
-    i++;
+    resultArray.push(routine[i](dogName, dogBreed))
   }
+  return resultArray;
 }
 
-function exerciseDog(dog, breed) {
-  return routine.map(fn => fn(dog, breed))
-}
+//Short Cut with map function: 
+
+// function exerciseDog(dog, breed) {
+//   return routine.map(fn => fn(dog, breed))
+// }
